@@ -1,5 +1,9 @@
+/**
+农场抽奖
+cron 50 11 * * * gua_nc-cj.js
+*/
 
-const $ = new Env('joy抽奖');
+const $ = new Env('农场抽奖');
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
